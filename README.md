@@ -26,7 +26,7 @@ GitHub supports LaTeX formatted math within Markdown, it uses the cross-browser
 JavaScript libary MathJax for rendering. Here is a mathematical expression for Binomial coeﬀicients:
 
 ```math
-\binom{n}{k} = \frac{n!}{k!(n-k)!}
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 ```
 
 [^1]: [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
