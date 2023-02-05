@@ -28,8 +28,36 @@ JavaScript libary MathJax for rendering. Here is a mathematical expression for B
 ```math
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
-# Diagrams
+### Diagrams
 
 You can create diagrams in Markdown using four different syntaxes: mermaid, geoJSON and topoJSON, and ASCII STL. Similar to fenced code blocks, digrams are rendered by placing triple backticks \`\`\` before and after the diagram code block, but you must specify a syntax identifer (e.g., mermaid) after initial backticks.
 
 Here is an example of a class diagram defined through the mermaid<sup>2</sup> syntax.
+
+```mermaid
+classDiagram
+    Animal <|-- Duck
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal : +isMammal()
+    Animal : +mate()
+    Duck : +String beakColor
+    Duck : +swim()
+    Duck : +quack()
+    Fish : -int sizeInFeet
+    Fish : -canEat()
+    Zebra : +bool is_wild
+    Zebra : +run()
+
+```
+
+And here is a sequence diagram:
+
+```mermaid
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice->>John: See you later!
+```
